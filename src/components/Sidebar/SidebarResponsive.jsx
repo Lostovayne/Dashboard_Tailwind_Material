@@ -1,4 +1,4 @@
-import {XMarkIcon} from '@heroicons/react/24/outline'
+import { XMarkIcon } from '@heroicons/react/24/outline'
 import {
     Bars3Icon,
     Cog6ToothIcon,
@@ -28,8 +28,14 @@ export function SidebarResponsive() {
 
     return (
         <React.Fragment>
-            <Button className=' p-1 bg-white shadow-none border-none hover:shadow-none '  onClick={openDrawer}>
-                <Bars3Icon className='h-6 w-6 text-black'/>
+            <Button
+                className={`${
+                    open
+                        ? 'hidden'
+                        : 'p-1 bg-white shadow-none border-none hover:shadow-none'
+                }`}
+                onClick={openDrawer}>
+                <Bars3Icon className='h-6 w-6 text-black' />
             </Button>
             <Drawer open={open} onClose={closeDrawer}>
                 <div className='mb-2 flex items-center justify-between p-4'>
