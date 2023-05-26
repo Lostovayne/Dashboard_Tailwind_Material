@@ -31,8 +31,8 @@ export function SidebarResponsive() {
             <Button
                 className={`${
                     open
-                        ? 'hidden'
-                        : ' transition-all duration-300 p-1 bg-white shadow-none border-none hover:shadow-none'
+                        ? 'hidden opacity-0 '
+                        : ' opacity-100 transition-all duration-500 p-1 bg-white shadow-none border-none hover:shadow-none'
                 }`}
                 onClick={openDrawer}>
                 <Bars3Icon className='h-6 w-6 text-black' />
